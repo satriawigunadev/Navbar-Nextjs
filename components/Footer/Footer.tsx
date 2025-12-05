@@ -1,4 +1,6 @@
-export function Footer() {
+import { footerProps } from "@/types/footer/footerType";
+
+export function Footer({ companyName, description }: footerProps) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -6,7 +8,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-center text-center">
           <span className="text-sm text-gray-600">
-            &copy; {currentYear} lihatdulu.com | Hak Cipta Dilindungi.
+            &copy; {currentYear} {companyName} | {description}
           </span>
         </div>
       </div>
