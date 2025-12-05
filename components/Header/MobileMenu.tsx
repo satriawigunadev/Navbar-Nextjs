@@ -12,7 +12,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, closeMenu }) => {
   return (
     <div
       className={`
-        fixed top-16 left-0  w-full  transition-transform duration-300 ease-in-out z-40 md:hidden border-t
+        fixed top-16 left-0 h-full w-full bg-white transition-transform duration-300 ease-in-out z-40 md:hidden border-t
         ${isOpen ? "translate-x-0" : "-translate-x-full"} 
         
       `}
