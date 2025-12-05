@@ -9,7 +9,7 @@ export function HeroSection({
   ctaButton,
 }: heroProps) {
   return (
-    <section className="relative w-full h-[600px] overflow-hidden">
+    <section className="relative w-full h-screen overflow-hidden">
       <Image
         src={imageUrl}
         alt="Narada"

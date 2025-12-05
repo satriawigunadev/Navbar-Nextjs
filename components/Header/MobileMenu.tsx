@@ -12,12 +12,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, closeMenu }) => {
   return (
     <div
       className={`
-        fixed top-16 left-0 h-full w-full bg-white transition-transform duration-300 ease-in-out z-40 md:hidden border-t
-        ${isOpen ? "translate-x-0" : "-translate-x-full"} 
-        
-      `}
+        fixed top-16 left-0 h-screen w-full bg-black/20 transition-transform duration-300 ease-in-out z-40 md:hidden border-t
+        ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+      onClick={closeMenu}
     >
-      <nav className="p-4 pt-2">
+      <nav className="p-4 pt-2 bg-white">
         <ul className="flex flex-col gap-1 ">
           {NAV_DATA.map((item: navProps) => (
             <li
